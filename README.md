@@ -55,4 +55,4 @@ The dataset consists of ball-by-ball match details from **2008 to 2020**.
 | `total`           | Total score (Target variable)          |
 
 
-![IPL Score Predictor Demo](streamlit_app/ipl_score_predictor.gif)
+<!-- ![IPL Score Predictor Demo](streamlit_app/ipl_score_predictor.gif) -->
