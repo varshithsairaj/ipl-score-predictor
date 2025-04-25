@@ -1,37 +1,57 @@
-# ipl-score-predictor
-This Streamlit webapp enables user to predict total runs between teams using current runs and wickets.
+# 🏏 IPL Score Predictor
 
-Algorithms used:
+This Streamlit web application predicts the **total runs** a team might score in an IPL match based on current match statistics such as runs, wickets, and overs.
 
-Linear Regression
-K-Nearest Neighbor Regressor
-XGBoost Regressor
-RandomForest Regressor
-SVR
-Decision Tree Regressor
-Hyperparamter Optimization:
+![IPL Score Predictor Demo](streamlit_app/ipl_score_predictor.gif)
 
-Used optuna for paramter optimization.
+---
 
-Dataset:
+## 📌 Features
 
-The dataset comprises of over by over details of matches and runs from 2008 to 2020.
+- Predict total score during an ongoing match.
+- Select teams, input current stats, and get score predictions instantly.
+- Interactive and easy-to-use UI built with **Streamlit**.
 
-Dataset Used: ipl_data.csv
+---
 
-mid - match id
-date - when matches are played
-venue - place where matches aew played
-bat_team - batting team
-bowl_team - bowling team
-batsman - batsman
-bowler - bowler
-runs - runs scored
-wickets - wickets
-overs - overs - next 3 are based on this
-run_last_5 - runs scored in last 5 overs
-wicket_last_5 - wickets in last 5 overs
-stricker - batsman playing as main 1
-non-striker - batsman playing as runner up - not main 0
-total - total score (target variable)
-Streamlit App:
+## 🧠 Algorithms Used
+
+- Linear Regression  
+- K-Nearest Neighbor Regressor  
+- XGBoost Regressor  
+- Random Forest Regressor  
+- Support Vector Regressor (SVR)  
+- Decision Tree Regressor  
+
+---
+
+## ⚙️ Hyperparameter Optimization
+
+- Utilized **Optuna** for efficient parameter tuning across all models.
+
+---
+
+## 📂 Dataset Information
+
+The dataset consists of ball-by-ball match details from **2008 to 2020**.
+
+**Dataset used:** `ipl_data.csv`
+
+| Column            | Description                            |
+|-------------------|----------------------------------------|
+| `mid`             | Match ID                               |
+| `date`            | Match date                             |
+| `venue`           | Match venue                            |
+| `bat_team`        | Batting team                           |
+| `bowl_team`       | Bowling team                           |
+| `batsman`         | Current batsman                        |
+| `bowler`          | Current bowler                         |
+| `runs`            | Current total runs                     |
+| `wickets`         | Current total wickets                  |
+| `overs`           | Overs completed                        |
+| `run_last_5`      | Runs in last 5 overs                   |
+| `wicket_last_5`   | Wickets in last 5 overs                |
+| `stricker`        | Striker batsman                        |
+| `non-striker`     | Non-striker batsman                    |
+| `total`           | Total score (Target variable)          |
+
