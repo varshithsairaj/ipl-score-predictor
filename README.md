@@ -2,7 +2,6 @@
 
 This Streamlit web application predicts the **total runs** a team might score in an IPL match based on current match statistics such as runs, wickets, and overs.
 
-![IPL Score Predictor Demo](streamlit_app/ipl_score_predictor.gif)
 
 ---
 
@@ -55,3 +54,5 @@ The dataset consists of ball-by-ball match details from **2008 to 2020**.
 | `non-striker`     | Non-striker batsman                    |
 | `total`           | Total score (Target variable)          |
 
+
+![IPL Score Predictor Demo](streamlit_app/ipl_score_predictor.gif)
